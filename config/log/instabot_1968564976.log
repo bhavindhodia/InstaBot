@@ -1,0 +1,19 @@
+2020-07-04 19:47:14,619 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-07-04 19:47:14,620 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from /home/pi/.local/lib/python3.7/site-packages/instabot/bot/bot.py
+2020-07-04 19:47:14,623 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-07-04 19:47:14,625 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-07-04 19:47:14,626 - instabot version: 0.117.0 (api_login) - INFO - Recovery from /home/pi/instabots/ai2motivate/config/ai2motivate_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=f378563c-c082-4a16-b805-3ecd7971d3aa
+- uuid=c3e7ae9f-5f71-4026-b15a-98f7cfcce06f
+- client_session_id=85840552-540f-4790-8bfe-5d66ab9167e9
+- device_id=android-02f814e747bc4bc8
+2020-07-04 19:47:14,627 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2020-07-04 19:47:15,431 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2020-07-04 19:47:24,435 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2020-07-04 19:47:24,440 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'ai2motivate'!
+2020-07-04 19:47:24,442 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: /home/pi/instabots/ai2motivate/config/ai2motivate.checkpoint
+2020-07-04 19:48:15,786 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: /home/pi/instabots/ai2motivate/config/ai2motivate.checkpoint
+2020-07-04 19:48:15,789 - instabot version: 0.117.0 (bot) - INFO - Total requests: 35
+2020-07-04 19:48:15,791 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: /home/pi/instabots/ai2motivate/config/ai2motivate.checkpoint
+2020-07-04 19:48:15,795 - instabot version: 0.117.0 (bot) - INFO - Total requests: 35

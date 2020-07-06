@@ -1,0 +1,16 @@
+2020-07-04 19:35:35,381 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-07-04 19:35:35,382 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from /home/pi/.local/lib/python3.7/site-packages/instabot/bot/bot.py
+2020-07-04 19:35:35,386 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2020-07-04 19:35:35,868 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [200]>
+2020-07-04 19:35:36,364 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2020-07-04 19:35:36,827 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2020-07-04 19:35:37,304 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/contact_point_prefill/ returned response: <Response [200]>
+2020-07-04 19:35:39,078 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/login/ returned response: <Response [200]>
+2020-07-04 19:35:39,079 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'ai2motivate'!
+2020-07-04 19:35:39,081 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: True
+2020-07-04 19:35:41,644 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2020-07-04 19:35:42,047 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2020-07-04 19:35:42,514 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: zr/token/result/?device_id=android-02f814e747bc4bc8&token_hash=&custom_device_id=android-02f814e747bc4bc8&fetch_reason=token_expired returned response: <Response [200]>
+2020-07-04 19:35:43,091 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: multiple_accounts/get_account_family/ returned response: <Response [200]>
+2020-07-04 19:35:43,723 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2020-07-04 19:35:44,351 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: igtv/browse_feed/?prefetch=1 returned response: <Response [200]>
