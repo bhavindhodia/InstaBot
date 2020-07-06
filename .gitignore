@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+.DS_Store
 
 # Distribution / packaging
 .Python
@@ -12,10 +12,12 @@ downloads/
 eggs/
 .eggs/
 lib/
+bin/
+quotesImg/
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
 
-bin/
+
 secret.py
-quotesImg/
+
