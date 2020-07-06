@@ -51,5 +51,6 @@ coverage.xml
 .pytest_cache/
 cover/
 
+bin/
 secret.py
 quotesImg/

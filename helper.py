@@ -1,13 +1,27 @@
 from instabot import Bot
-import platform    
+import platform ,glob ,random 
 import subprocess 
 import pathlib
 from secret import username,password
+from Tags import TAGS,CAPTIONS
 
 def PWD(__file__):
     return str(pathlib.Path(__file__).parent.absolute())
 
 current_dir = PWD(__file__)
+
+def RandomFont():
+    fonts = glob.glob("theme/fonts/*.ttf")
+    font = random.choice(fonts)
+    return PWD(__file__)+'/'+font
+
+def createTags():
+    tag = random.sample(TAGS,3)
+    listTotags = ' '.join([str(elem) for elem in tag]) 
+    return listTotags
+
+def createCaption():
+    return random.choice(CAPTIONS)
 
 def Ping(host):
     """
@@ -59,5 +73,5 @@ def UploadInsta(file_name):
     bot.login(username = username,  
             password = password) 
     print("success")
-    # bot.upload_photo(current_dir+'/quotesImg/'+file_name, 
-    #                 caption ="Daily Quote 😇") 
+    bot.upload_photo(current_dir+'/quotesImg/'+file_name, 
+                    caption = createCaption() + "\n \n" +createTags() ) 

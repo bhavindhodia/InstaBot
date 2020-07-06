@@ -3,32 +3,25 @@
         "textColor":"#ffffff",
         "bgColor":"#000000",
         "fontFamily":"montserratMedium.ttf",
-        "author" :"By PepperI",
-        "signText": "@ai2motivate",
+ 
         "signColor":"#ffffff"
     },
     "WhiteAndBlack":{
         "textColor":"#000000",
         "bgColor":"#ffffff",
         "fontFamily":"montserratMedium.ttf",
-        "author" :"By PepperI",
-        "signText": "@ai2motivate",
         "signColor":"#000000"
     },
     "MaroonAndWhite":{
         "textColor":"#ffffff",
         "bgColor":"#a13137",
         "fontFamily":"montserratMedium.ttf",
-        "author" :"By PepperI",
-        "signText": "@ai2motivate",
         "signColor":"#ffffff"
     },
     "PurpleAndWhite":{
         "textColor":"#ffffff",
-        "bgColor":"#23142a",
+        "bgColor":"#35074a",
         "fontFamily":"montserratMedium.ttf",
-        "author" :"By PepperI",
-        "signText": "@ai2motivate",
         "signColor":"#ffffff"
 
     }
@@ -37,8 +30,6 @@
         "textColor":"#ffffff",
         "bgColor":"#23142a",
         "fontFamily":"montserratMedium.ttf",
-        "author" :"By PepperI",
-        "signText": "@ai2motivate",
         "signColor":"#ffffff"
 
     }
@@ -47,8 +38,6 @@
         "textColor":"#0b3b2e",
         "bgColor":"#23142a",
         "fontFamily":"montserratMedium.ttf",
-        "author" :"By PepperI",
-        "signText": "@ai2motivate",
         "signColor":"#ffffff"
 
     },
@@ -56,8 +45,6 @@
         "textColor":"#000000",
         "bgColor":"#fedc36",
         "fontFamily":"montserratMedium.ttf",
-        "author" :"By PepperI",
-        "signText": "@ai2motivate",
         "signColor":"#000000"
 
     }  ,
@@ -65,9 +52,12 @@
         "textColor":"#0f3e33",
         "bgColor":"#FFFFFF",
         "fontFamily":"montserratMedium.ttf",
-        "author" :"By PepperI",
-        "signText": "@ai2motivate",
         "signColor":"#0f3e33"
-
+    } ,
+    "OrangeAndBlack":{
+        "textColor":"#000000",
+        "bgColor":"#ff842b",
+        "fontFamily":"montserratMedium.ttf",
+        "signColor":"#000000"
     }
 }

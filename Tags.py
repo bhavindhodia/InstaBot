@@ -1,0 +1,36 @@
+TAGS = [
+"#motivational",
+"#motivation",
+"#motivationalquotes",
+"#inspiration",
+"#quotes",
+"#success",
+"#inspirational",
+"#inspirationalquotes",
+"#quoteoftheday",
+"#inspire",
+"#entrepreneur",
+"#positivevibes",
+"#quote",
+"#lifequotes",
+"#motivate",
+"#motivationmonday",
+"#quotestoliveby",
+"#motivationalquote",
+"#entrepreneurlife",
+"#successmindset",
+"#motivationquotes",
+"#entrepreneurship",
+"#india",
+"#quotestagram",
+"#quotesaboutlife",
+]
+
+CAPTIONS = [
+    "Follow @ai2motivate for more wisdom 😉",
+    "Tag someone who needs to read this! Don’t allow your happiness to be dependent on the actions of others. 😇",
+    "Drop a ❤️ if this resonates! Follow  @ai2motivate  for daily Quotes 😎",
+    "For wise words follow @ai2motivate",
+    "Comment down your thoughts 🙅🏻‍♂️",
+    "Tag someone you admire for their self-belief 💜"
+]
