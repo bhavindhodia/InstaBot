@@ -48,7 +48,7 @@ def MakeQuote():
     quoteWrap = TextWrap(txt,FONT,512)
 
 
-    while(len(quoteWrap[0]) >= 7):
+    while(len(quoteWrap[0]) >= 8):
         print("\n ******** REFETCHING ******** \n  " )
         quoteData = getQuote()
         txt = quoteData['quote']['body']
