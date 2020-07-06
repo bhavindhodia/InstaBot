@@ -17,7 +17,7 @@ AUTHOR = "By PepperI"
 SIGN_TXT = "@ai2motivate"
 FONT = ImageFont.truetype(RandomFont(), 40)
 FONT_SIGN = ImageFont.truetype(
-    current_dir+'/'+'/theme/fonts/merriweatherRegular.ttf', 25)
+    current_dir+'/theme/fonts/merriweatherRegular.ttf', 25)
 
 
 

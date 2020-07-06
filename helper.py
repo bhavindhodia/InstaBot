@@ -11,7 +11,7 @@ def PWD(__file__):
 current_dir = PWD(__file__)
 
 def RandomFont():
-    fonts = glob.glob("theme/fonts/*.ttf")
+    fonts = glob.glob(current_dir+"/theme/fonts/*.ttf")
     font = random.choice(fonts)
     return PWD(__file__)+'/'+font
 
