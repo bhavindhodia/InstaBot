@@ -89,11 +89,11 @@ def RunJob():
     if Ping("google.co.in"):
         finalImage = MakeQuote()
         # FILENAME FOR TEMP SAVE
-        filename="currentQuote.jpg"
-
+        filename= current_dir+'/quotesImg/'+"currentQuote.jpg"
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
         #SAVE THE FILE
         print("SAVE THE FILE")
-        finalImage.save(current_dir+'/quotesImg/'+filename)
+        finalImage.save(filename)
         UploadInsta(filename)
 
     else:

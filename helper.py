@@ -73,5 +73,5 @@ def UploadInsta(file_name):
     bot.login(username = username,  
             password = password) 
     print("success")
-    bot.upload_photo(current_dir+'/quotesImg/'+file_name, 
+    bot.upload_photo(file_name, 
                     caption = createCaption() + "\n \n" +createTags() ) 
