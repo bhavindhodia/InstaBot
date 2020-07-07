@@ -8,12 +8,12 @@ from Tags import TAGS,CAPTIONS
 def PWD(__file__):
     return str(pathlib.Path(__file__).parent.absolute())
 
-current_dir = PWD(__file__)
+current_dir = PWD(__file__)+'/'
 
 def RandomFont():
-    fonts = glob.glob("theme/fonts/*.ttf")
+    fonts = glob.glob(current_dir+"theme/fonts/*.ttf")
     font = random.choice(fonts)
-    return PWD(__file__)+'/'+font
+    return font
 
 def createTags():
     tag = random.sample(TAGS,3)
@@ -64,7 +64,7 @@ def TextWrap(text, font, max_width):
 
         current_h = (max_width * .30)
         pad = 10
-    print("Line",len(lines)) 
+    print("Total Lines == ",len(lines)) 
     return lines,int(current_h),pad
 
 # UPLOAD IMAGE TO INSTAGRAM

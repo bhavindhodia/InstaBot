@@ -28,15 +28,16 @@ with open(current_dir+'/theme/theme.json') as f:
 
 randomTheme = random.choice(tuple(themeData))
 currentTheme = SimpleNamespace(**themeData[randomTheme])
-print("Theme  => {0}  == {1} == {2} ".format(currentTheme.textColor,currentTheme.bgColor,RandomFont()))
+print("\n ##### Theme ##### \n TxtColor == {0}  \n bgColor == {1} \n Font == {2} \n "
+    .format(currentTheme.textColor,currentTheme.bgColor,RandomFont()))
 
 
 # GET QUOTE
 def getQuote():
-    print("FETCHING DATA")
+    print("\n ****** FETCHING DATA ******")
     with urllib.request.urlopen("https://favqs.com/api/qotd") as url:
         data = json.loads(url.read().decode())
-        print("DATA FETCHED",data['quote']['body'] )
+        print("QUOTE IS => {0} \n ".format(data['quote']['body']))
         
         return data
 
