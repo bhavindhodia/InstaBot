@@ -1,39 +1,40 @@
 from instabot import Bot
-import platform ,glob ,random 
-import subprocess 
-import pathlib
+from platform   import system
+from glob import glob
+from pathlib import Path
 from secret import username,password
 from Tags import TAGS,CAPTIONS
-
+from numpy.random import choice
+from os import makedirs,path,rename
+import subprocess
+from PIL import Image
+from instapy_cli import client
+    
 def PWD(__file__):
-    return str(pathlib.Path(__file__).parent.absolute())
+    return str(Path(__file__).parent.absolute()) +"/"
 
-current_dir = PWD(__file__)+'/'
+current_dir = PWD(__file__)
 
 def RandomFont():
-    fonts = glob.glob(current_dir+"theme/fonts/*.ttf")
-    font = random.choice(fonts)
+    fonts = glob(current_dir+"theme/fonts/*.ttf")
+    font = choice(fonts)
     return font
 
 def createTags():
-    tag = random.sample(TAGS,3)
+    tag = choice(TAGS,7)
     listTotags = ' '.join([str(elem) for elem in tag]) 
     return listTotags
 
 def createCaption():
-    return random.choice(CAPTIONS)
+    return choice(CAPTIONS)
 
-def Ping(host):
+def Ping():
     """
     Returns True if host (str) responds to a ping request.
-    Remember that a host may not respond to a ping (ICMP) request even if the host name is valid.
     """
+    param = '-n' if system().lower()=='windows' else '-c'
 
-    # Option for the number of packets as a function of
-    param = '-n' if platform.system().lower()=='windows' else '-c'
-
-    # Building the command. Ex: "ping -c 1 google.com"
-    command = ['ping', param, '3', host]
+    command = ['ping', param, '2', "google.co.in"]
 
     return subprocess.call(command) == 0
 
@@ -64,14 +65,31 @@ def TextWrap(text, font, max_width):
 
         current_h = (max_width * .30)
         pad = 10
+        
     print("Total Lines == ",len(lines)) 
     return lines,int(current_h),pad
 
+def ReduceOpacity(png, opacity):
+    """
+    Returns an image with reduced Alpa.
+    """
+    png.putalpha(opacity)
+    png.load() # required for png.split()
+    background = Image.new("RGB", png.size, (opacity, opacity, opacity))
+    background.paste(png, mask=png.split()[3]) # 3 is the alpha channel
+    # background.save(file_path)
+
+    return background
+   
+    
 # UPLOAD IMAGE TO INSTAGRAM
 def UploadInsta(file_name):
     bot = Bot() 
     bot.login(username = username,  
             password = password) 
-    print("success")
+    
     bot.upload_photo(file_name, 
                     caption = createCaption() + "\n \n" +createTags() ) 
+    # caption = createCaption() + "\n \n" +createTags()
+    # with client(username, password) as cli:
+    #     cli.upload(file_name, caption)
