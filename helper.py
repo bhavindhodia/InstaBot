@@ -8,7 +8,6 @@ from numpy.random import choice
 from os import makedirs,path,rename
 import subprocess
 from PIL import Image
-from instapy_cli import client
     
 def PWD(__file__):
     return str(Path(__file__).parent.absolute()) +"/"
