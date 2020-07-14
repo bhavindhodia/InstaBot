@@ -10,7 +10,7 @@ class BgImage:
         pass
 
     def getBgImg(self):
-        bg_img = get("https://source.unsplash.com/random/720x720/?supercars")
+        bg_img = get("https://source.unsplash.com/random/720x720/?nature")
         fetched_img =Image.open(BytesIO(bg_img.content))
 
         png_img_path = PWD(__file__)+"quotesImg/currentQuote.png"

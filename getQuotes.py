@@ -54,7 +54,7 @@ class Quote:
         allquotes = [self.getZenQuote,self.getForismatic]
 
         # Define Porbabilty to fetch more data from FORISMATIC
-        randomQuote = choice(allquotes,p=(.5,.5))
+        randomQuote = choice(allquotes,p=(.9,.1))
 
         return randomQuote()
 
